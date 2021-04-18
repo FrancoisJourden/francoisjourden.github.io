@@ -46,11 +46,12 @@
 
     <main>
         <div id="bouton_darkMode">
-        Mode nuit :
-            <!--<button onclick="myFunction()">--><label class="switch" >
-                    <input type="checkbox" onclick="myFunction()">
-                    <span class="slider round"></span>
-                </label><!--</button>-->
+            Mode nuit :
+            <!--<button onclick="myFunction()">--><label class="switch">
+                <input type="checkbox" onclick="myFunction()">
+                <span class="slider round"></span>
+            </label>
+            <!--</button>-->
             <script>
                 function myFunction() {
                     var element = document.body;
@@ -226,6 +227,29 @@
 
         <h1 class="titre_main">MES PROJETS</h1>
         <hr class="subTitre">
+        <div id="projets">
+            <div class="projet">
+                <figure class="projet_photo">
+                    <img src="images/e41b1e9d-c2ce-4795-9e4a-566d962d1337_200x200.png" class="projet_image">
+                    <figcaption class="projet_photo_desc">Meet'ech</figcaption>
+                </figure>
+                <p class="projet_desc">Site web sur le thème de l'informatique et du lien social.<br>Mon premier projet de DUT, réalisé en équipe avec Brice Bizot et Maxime Haley.</p>
+            </div>
+            <div class="projet">
+                <figure class="projet_photo">
+                    <img src="images/Group_25.svg" class="projet_image">
+                    <figcaption class="projet_photo_desc">Banking</figcaption>
+                </figure>
+                <p class="projet_desc">Logiciel javaFX de gestion de budget destiné aux étudiants.<br>Projet de second semestre de DUT, réalisé en équipe avec Louan Bélicaud, Yanis Ben Brahim, Gaston Duault et Emma Abarray.</p>
+            </div>
+            <div class="projet">
+                <figure class="projet_photo">
+                    <img src="images/motherboard-svgrepo-com.svg" class="projet_image">
+                    <figcaption class="projet_photo_desc">Mon PC</figcaption>
+                </figure>
+                <p class="projet_desc" id="desc_pc">Processeur:<br> AMD ryzen 5 2600<br><br>Carte mère:<br> MSI B450-A PRO<br>RAM: 2 x 8Go corsair vengeance 3000mhz cl 15<br><br>Carte graphique:<br> Gigabyte GeForce GTX 1050 Ti WindForce OC, 4 Go<br><br>Stockage:<br> SSD nvme 500Go<br> HDD 1To<br> HDD 2To<br><br>OS:<br> Windows10 x Pop!</p>
+            </div>
+        </div>
     </main>
 
     <footer>
