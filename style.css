@@ -1,0 +1,374 @@
+/*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Header */
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url(images/header_background.png);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  height: 115vh;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+#contenu_header {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding-top: 30vh;
+}
+
+#logos_reseaux img {
+  align-content: center;
+  width: 50px;
+  filter: invert(1);
+  padding: 5px;
+  transition: 700ms;
+  border-radius: 20px;
+}
+
+#logos_reseaux img:hover {
+  background-color: white;
+  filter: invert(6%) sepia(6%) saturate(30%) hue-rotate(314deg) brightness(107%) contrast(72%);
+
+}
+
+#header_nom {
+  font-size: 3em;
+  margin: 0 40% 0 40%;
+  /*margin-left: 0;*/
+  font-weight: bolder;
+  border: 2px white solid;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-out;
+  border-radius: 4px;
+}
+
+#header_nom:hover {
+  filter: invert(1);
+  background-color: #303030;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+}
+
+#header_desc {
+  font-size: 1.3em;
+}
+
+#header_desc a {
+  padding: 3px;
+  border-radius: 2px;
+  transition: ease;
+  transition-duration: 600ms;
+}
+
+#header_desc a:link,
+a:visited {
+  color: white;
+}
+
+#header_desc a:hover {
+  background-color: white;
+  color: #303030;
+  text-decoration: none;
+}
+
+#header_fleche {
+  height: 5vw;
+  filter: invert(1);
+  position: absolute;
+  left: 47.5vw;
+  bottom: 5vh;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#header_fleche:hover {
+  background-color: white;
+  filter: invert(0);
+}
+
+#photo {
+  position: absolute;
+  left: calc(50vw - 15vh);
+  height: 30vh;
+  bottom: calc(-30vh - 6px);
+  border-radius: 50%;
+  border: solid;
+  border-width: 3px;
+
+}
+
+/*main*/
+main {
+  margin-top: 15vh;
+  font-family: 'Cabin', sans-serif;
+}
+
+.titre_main {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 0;
+  font-size: 3em;
+  font-weight: bolder;
+  color: #2c3f50;
+}
+
+.texte_main_p {
+  margin: 0 10%;
+  font-size: 1.2em;
+  color: #2c3f50;
+  margin-top: 1.2em;
+}
+
+.texte_main_s {
+  margin: 0 10%;
+  font-size: 1.2em;
+  color: #555555;
+  margin-top: 1.2em;
+}
+
+.subTitre {
+  width: 50px;
+  color: #2c3f50;
+  margin-top: 2em;
+}
+
+/*Frise */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}*/
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+  margin-top: 2em;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #2c3f50;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #000000
+    /*006E51*/
+  ;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #2c3f50;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ec4942;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: -75px;
+}
+
+.container.right .date {
+  left: -75px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #d5d7e4;
+  border: 2px solid #2c3f50;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #2c3f50;
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: #d5d7e4;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ec4942;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2c3f50;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after,
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+/*Main*/
+#competences {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.competence {
+  margin-top: 1em 10% 0 10%;
+}
+
+.competence img {
+  height: 10em;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.skill {
+  margin-top: 1em 10% 0 10%;
+}
+
+.skill img {
+  height: 10em;
+}
+
+/*Footer*/

@@ -1,0 +1,125 @@
+<div class="history-tl-container">
+                <ul class="tl">
+                    <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="timestamp">
+                            2013
+                        </div>
+                        <div class="item-title">Achat de mon premier PC à moi</div>
+                        <div class="item-detail">Il n'a pas eu une vie facile.</div>
+                    </li>
+                    <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="timestamp">
+                            2016
+                        </div>
+                        <div class="item-title">Montage de mon premier PC</div>
+                        <div class="item-detail">Il était composé de pièces récupérées<br> dans des tours mortes</div>
+                    </li>
+                    <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="timestamp">
+                            2017
+                        </div>
+                        <div class="item-title">Achat de mon PC personnel</div>
+                        <div class="item-detail">J'ai enfin pu acheter de bons composants !</div>
+                    </li>
+                    <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="timestamp">
+                            2017
+                        </div>
+                        <div class="item-title">Obtention de mon Brevet</div>
+                        <div class="item-detail">Mon premier diplôme !</div>
+                    </li>
+                    <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="timestamp">
+                            2018
+                        </div>
+                        <div class="item-title">Entrée en filière S option SI</div>
+                        <div class="item-detail">J'y ai fait de l'électronique et de la mécanique<br> mais surtout de
+                            l'informatique et des maths.</div>
+                    </li>
+                    <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="timestamp">
+                            2020
+                        </div>
+                        <div class="item-title">Obtention de mon bac</div>
+                        <div class="item-detail">J'entre en études supèrieures !</div>
+                    </li>
+                    <li class="tl-item" ng-repeat="item in retailer_history">
+                        <div class="timestamp">
+                            2020
+                        </div>
+                        <div class="item-title">Entrée à l'IUT de Lannion<br>en informatique</div>
+                        <div class="item-detail">"C'est pas facile d'avoir 20ans en 2020"</div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+
+
+.history-tl-container {
+    font-family: "Roboto", sans-serif;
+    width: 50%;
+    margin: auto;
+    display: block;
+    position: relative;
+    right: -7%;
+    left: 7%
+}
+
+.history-tl-container ul.tl {
+    margin: 20px 0;
+    padding: 0;
+    display: inline-block;
+
+}
+
+.history-tl-container ul.tl li {
+    list-style: none;
+    margin: auto;
+    margin-left: 200px;
+    min-height: 50px;
+    /*background: rgba(255,255,0,0.1);*/
+    border-left: 1px dashed #86D6FF;
+    padding: 0 0 50px 30px;
+    position: relative;
+}
+
+.history-tl-container ul.tl li:last-child {
+    border-left: 0;
+}
+
+.history-tl-container ul.tl li::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 0.74);
+    border-radius: 500%;
+    background: #258CC7;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+
+}
+
+.history-tl-container ul.tl li:hover::before {
+    border-color: #258CC7;
+    transition: all 1000ms ease-in-out;
+}
+
+ul.tl li .item-detail {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+
+ul.tl li .timestamp {
+    color: #8D8D8D;
+    position: absolute;
+    width: 100px;
+    left: -50%;
+    text-align: right;
+    font-size: 12px;
+}
