@@ -89,7 +89,7 @@ a:visited {
   bottom: 5vh;
   padding: 10px;
   border-radius: 10px;
-  transition:  1s;
+  transition:background 1s;
 }
 
 #header_fleche:hover {
@@ -157,7 +157,7 @@ main {
   transition: .4s;
 }
 
-.slider:before {
+.slider:before { /*before*/
   position: absolute;
   content: "";
   height: 26px;
@@ -177,7 +177,7 @@ input:focus + .slider {
   box-shadow: 0 0 1px #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked + .slider:before { /*before*/
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -188,7 +188,7 @@ input:checked + .slider:before {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.slider.round:before {/*before*/
   border-radius: 50%;
 } 
 
