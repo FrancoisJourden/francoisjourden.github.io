@@ -4,6 +4,7 @@
 /*Header */
 body {
   margin: 0;
+  transition: background 500ms;
 }
 
 html {
@@ -51,6 +52,26 @@ header {
   transition-timing-function: ease-out;
   border-radius: 4px;
   text-align: center;
+}
+@media (max-width: 1700px){
+  #header_nom{
+    margin: 0 30% 0 30%
+  }
+}
+@media (max-width: 850px){
+  #header_nom{
+    margin: 0 20% 0 20%
+  }
+}
+@media (max-width: 600px){
+  #header_nom{
+    margin: 0 15% 0 15%
+  }
+}
+@media (max-width: 450px){
+  #header_nom{
+    margin: 0 20% 0 20%
+  }
 }
 
 #header_nom:hover {
@@ -123,6 +144,13 @@ main {
   right: 10px;
   top: 10vh;
   z-index: 1;
+  background-color: #d5d7e4;
+  padding: 0.5em 0 0.5em 1em;
+  border-radius: 17px;
+}
+.dark-mode #bouton_darkMode {
+  background-color : #1e1e1e;
+  border : 2px solid white;
 }
 
 /*#bouton_darkMode button {
@@ -493,6 +521,7 @@ input:checked+.slider:before {
 #competences {
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -506,6 +535,7 @@ input:checked+.slider:before {
 
 .skills {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
@@ -521,6 +551,7 @@ input:checked+.slider:before {
 
 #projets {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 1em;
 }
@@ -537,9 +568,13 @@ input:checked+.slider:before {
   text-align: center;
 }
 
+.projet_photo_desc {
+  font-size: 1.2em;
+  font-weight:500;
+}
 .projet_image {
-  height: 10em;
-  margin: 0 0 0 0;
+  height: 8em;
+  margin: 0 1em 0 1em;
   padding: 0;
   border-radius: 10px;
 }
@@ -548,13 +583,58 @@ input:checked+.slider:before {
   margin: 2em;
 }
 
-#desc_pc {
-  font-size: 10px;
-}
-
 .dark-mode .projet {
   background-color: #1e1e1e;
   border : 2px solid white;
 }
+@media screen and (max-width:600px){
+  #projet {
+    flex-direction: column;
+  }
+  .projet {
+    width : 100%
+  }
 
+}
+#carte {
+  margin: 1em 10% 0 10%;
+}
 /*Footer*/
+footer {
+  background-color: #d5d7e4;
+  text-align: center;
+  color: #2c3f50;
+  border-radius: 10px 10px 0 0;
+  margin-top: 2em;
+}
+
+.dark-mode footer {
+  background-color: #303030;
+  color :white
+}
+.dark-mode footer a:link, a:visited{
+  color:white
+}
+
+
+.footer_contact_image img {
+  height : 3em;
+}
+
+footer a:link,
+footer a:visited {
+  color: #2c3f50;
+  text-decoration: none;
+}
+
+footer a:link:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  margin: 0.7em;
+}
+
+.dark-mode footer img {
+  filter: invert(1);
+}
