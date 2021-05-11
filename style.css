@@ -160,6 +160,7 @@ main {
   background-color: #d5d7e4;
   padding: 0.5em 0 0.5em 1em;
   border-radius: 17px;
+  border: 2px solid #dfe2ee;
 }
 
 .dark-mode #bouton_darkMode {
