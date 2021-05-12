@@ -79,7 +79,7 @@ header {
 
 #header_desc {
   font-size: 1.3em;
-  width: 450.75px;
+  width: 460px;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
