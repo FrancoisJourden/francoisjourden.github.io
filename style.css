@@ -22,6 +22,19 @@ header {
   border-radius: 0 0 10px 10px;
 }
 
+#drapeau {
+  position: absolute;
+  right: 0;
+  margin: 10px
+}
+
+#drapeau img{
+  height: 7em;
+  width: 7em;
+  border-radius: 10%;
+  object-fit:cover;
+}
+
 #contenu_header {
   font-family: 'Roboto Condensed', sans-serif;
   padding-top: 30vh;
@@ -79,11 +92,17 @@ header {
 
 #header_desc {
   font-size: 1.3em;
-  width: 460px;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
+}
+
+.td_en {
+  width: 495px;
+}
+.td_fr{
+  width: 460px;
 }
 
 @keyframes typing {
