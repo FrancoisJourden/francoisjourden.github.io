@@ -98,6 +98,8 @@ header {
   border-right: 3px solid;
 }
 
+
+
 .td_en {
   width: 495px;
 }
@@ -114,6 +116,15 @@ header {
 @keyframes blink {
   50% {
     border-color: transparent
+  }
+}
+
+@media (max-width: 500px){
+  #header_desc {
+    font-size:1em;
+  }
+  .td_fr{
+    width: 355px;
   }
 }
 
