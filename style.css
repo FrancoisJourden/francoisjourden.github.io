@@ -25,7 +25,7 @@ header {
 #drapeau {
   position: absolute;
   right: 0;
-  margin: 10px
+  margin: 10px;
 }
 
 #drapeau img{
@@ -33,6 +33,7 @@ header {
   width: 7em;
   border-radius: 50%;
   object-fit:cover;
+  border : solid white 2px;
 }
 
 #contenu_header {
@@ -128,6 +129,17 @@ header {
   }
   .td_en{
     width: 385px;
+  }
+}
+@media (max-width: 390px){
+  #header_desc {
+    font-size:0.7em;
+  }
+  .td_fr{
+    width: 255px;
+  }
+  .td_en{
+    width: 270px;
   }
 }
 
